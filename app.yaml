@@ -1,0 +1,20 @@
+runtime: php
+env: flex
+
+runtime_config:
+  document_root: public
+
+# Ensure we skip ".env", which is only for local development
+skip_files:
+  - .env
+
+env_variables:
+  # Put production environment variables here.
+  APP_LOG: errorlog
+  APP_KEY: base64:gkjdigEiQ1VBp9jFxm51nEmwX8pBZ+l66Gw5rT70308=
+  STORAGE_DIR: /tmp
+#https://www.youtube.com/watch?v=t10U_NXa3JM
+# https://cloud.google.com/community/tutorials/run-laravel-on-appengine-flexible
+# https://console.cloud.google.com/iam-admin/iap/project?project=appwebsistemaventas
+# https://console.cloud.google.com/freetrial?project=appwebsistemaventas&redirectPath=%2Fbilling%2Flinkedaccount%3Fproject%3Dappwebsistemaventas&page=1
+# https://console.cloud.google.com/home/dashboard?project=appwebsistemaventas&_ga=2.211302738.-691484890.1507298634
