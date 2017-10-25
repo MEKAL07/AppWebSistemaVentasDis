@@ -20,7 +20,7 @@ class GenerandoFiltro
     {
         $url=$request->url();
 
-        if(!(Session::has('idUsuario')) && $url!='http://localhost/AppWebSistemaVentasDis/public' && !($request->has('emalCorreoElectronicoLogin')))
+        if(!(Session::has('idUsuario')) && $url!='http://localhost:8081/AppWebSistemaVentasDis/public' && !($request->has('emalCorreoElectronicoLogin')))
         {
           return redirect('/');
         }
